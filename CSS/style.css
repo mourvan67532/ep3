@@ -1,65 +1,67 @@
+/* fontes */
 @font-face { /* adicionar fonte*/
     font-family: texto; /* nome da fonte */
     src: url(../fontes/coolvetica\ rg.otf); /* local aonde está a fonte */
 }
-@font-face {
-    font-family: dodger;
-    src: url(../fontes/dodger3superital.ttf);
+@font-face { /* adicionar fonte*/
+    font-family: dodger; /* nome da fonte */
+    src: url(../fontes/dodger3superital.ttf); /* local aonde está a fonte */
 }
-@font-face {
-    font-family: tires;
-    src: url(../fontes/MAGNETOB.TTF);
+@font-face { /* adicionar fonte*/
+    font-family: tires; /* nome da fonte */
+    src: url(../fontes/MAGNETOB.TTF); /* local aonde está a fonte */
 }
-body{
-    background-image: linear-gradient(90deg, rgb(2, 47, 58) 0%, rgb(0, 91, 114) 50%, rgb(2, 130, 161) 100%);
-    color: rgb(0, 71, 88);
+/* body */
+body{ /* modifica toda a página */
+    background-image: linear-gradient(90deg, rgb(2, 47, 58) 0%, rgb(0, 91, 114) 50%, rgb(2, 130, 161) 100%);/* fundo com gradient*/
+    color: rgb(0, 71, 88); /* cor das letras*/
 }
 /* header */
 header{
-    background-color: rgb(235, 235, 235);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(235, 235, 235); /* cor de fundo do header*/
+    display: flex; /* posicionar os elementos do header */
+    justify-content: center; /* alinhar o header ao centro*/
+    align-items: center; /* posicionar ao centro em relação ou topo e em baixo */
 }
-#h1header{
-    font-family: tires;
-    color: black;
-    font-size: 3rem;
-    text-shadow: 
+#h1header{ /* modificar o título no header*/
+    font-family: tires; /* fonte usada*/
+    color: black; /* cor da fonte*/
+    font-size: 3rem; /* tamanho da fonte*/
+    text-shadow: /* borda nas letras*/
     -1px -1px 0px blue, 
     -1px 1px 0px blue,      
      1px -1px 0px blue,    
      1px 0px 0px blue;
-    text-decoration: none;
+    text-decoration: none; /* retirar o underline no link*/
 }
-#h1header:hover{
-    text-decoration: underline;
-    text-shadow: 
+#h1header:hover{ /* animação ao passar o curso*/
+    text-decoration: underline; /* deixar o título sublinado*/
+    text-shadow: /* mudar a cor da borda da letra*/
     -1px -1px 0px #ac3840, 
     -1px 1px 0px #ac3840,      
      1px -1px 0px #ac3840,    
      1px 0px 0px #ac3840;
 }
-.pagina{
-    padding-left: 30px;
+.pagina{ /* espaço entre o título e os links*/
+    padding-left: 30px; /* tamanho do espaço*/
 }
-header li{
-    padding-left: 15px;
-    display: inline-flex;
+header li{ /* lista no header */
+    padding-left: 15px; /* espaço entre cada elemento da lista*/
+    display: inline-flex; /* colocar a lista em linha*/
 }
-.headera{
-    text-decoration: none;
-    font-size: x-large
+.headera{ /* mudar os links da lista*/
+    text-decoration: none; /* retirar a decoração do texto*/
+    font-size: x-large; /* tamanho da fonte*/
 }
-.headera:hover{
-    color: #ac3840;
-    background-color: rgb(193, 208, 221);
-    border: 3px dashed blue;
-    padding: 4px;
-    font-size: x-large;
+.headera:hover{ /* animação do link no header ao passar o cursor*/
+    color: #ac3840; /* cor da letra*/
+    background-color: rgb(193, 208, 221); /* cor de fundo*/
+    border: 3px dashed blue; /* borda*/
+    padding: 4px; /* espaço entre a borda e o texto*/
+    font-size: x-large; /* tamanho da fonte*/
 }
-#imgheader{
-    width: 6rem;
+#imgheader{ /* logo no header*/
+    width: 6rem; /* tamanho da logo*/
 }
 /* main */
 .fundo h1{
