@@ -144,4 +144,12 @@ figcaption{
     
 }
 /* matheus */
+.meza:hover{
+    border: 5px solid gold;
+    border-radius: 5rem;
+}
+#mezah1{
+    color: red;
+    text-decoration: underline;
+}
 /* vinicius */
