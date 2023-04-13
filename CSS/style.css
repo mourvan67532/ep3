@@ -1,0 +1,145 @@
+@font-face {
+    font-family: texto;
+    src: url(../fontes/coolvetica\ rg.otf);
+}
+@font-face {
+    font-family: dodger;
+    src: url(../fontes/dodger3superital.ttf);
+}
+@font-face {
+    font-family: tires;
+    src: url(../fontes/MAGNETOB.TTF);
+}
+body{
+    background-image: linear-gradient(90deg, rgb(2, 47, 58) 0%, rgb(0, 91, 114) 50%, rgb(2, 130, 161) 100%);
+    color: rgb(0, 71, 88);
+}
+/* header */
+header{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h1header{
+    font-family: tires;
+    color: black;
+    font-size: 3rem;
+    text-shadow: 
+    -1px -1px 0px blue, 
+    -1px 1px 0px blue,      
+     1px -1px 0px blue,    
+     1px 0px 0px blue;
+    text-decoration: none;
+}
+#h1header:hover{
+    text-decoration: underline;
+    text-shadow: 
+    -1px -1px 0px #ac3840, 
+    -1px 1px 0px #ac3840,      
+     1px -1px 0px #ac3840,    
+     1px 0px 0px #ac3840;
+}
+.pagina{
+    padding-left: 30px;
+}
+header li{
+    padding-left: 15px;
+    display: inline-flex;
+}
+.headera{
+    text-decoration: none;
+    font-size: x-large
+}
+.headera:hover{
+    color: #ac3840;
+    background-color: rgb(193, 208, 221);
+    border: 3px dashed blue;
+    padding: 4px;
+    font-size: x-large;
+}
+#imgheader{
+    width: 6rem;
+}
+/* main */
+.fundo h1{
+    text-align: center;
+    font-family: dodger;
+    color: rgb(1, 53, 66);
+    text-shadow: 
+    -1px -1px 0px lightblue, 
+    -1px 1px 0px lightblue,      
+     1px -1px 0px lightblue,    
+     1px 0px 0px lightblue;
+     font-size: xx-large;
+
+
+}
+.fundo{
+    margin-top: 2rem;    
+    border: 1px solid aliceblue;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 23%;
+    margin-right: 23%;
+    background-color: aliceblue;
+    border-radius: 5rem;
+}
+.fundo p{
+    font-family: texto;
+    text-indent: 25px;
+}
+.fundo img{
+    width: 35rem;
+    margin: auto;
+    display: block;
+    border: 5px solid rgb(31, 0, 31);
+}
+figcaption{
+    text-align: center;
+    font-size: small;
+}
+/* footer */
+
+
+/* mourvan */
+#buzina{
+    cursor: pointer;
+}
+#mourvan{
+    color: white;
+    text-align: center;
+    border: 7px groove green;
+    border-radius: 1rem;
+    margin-left: 23%;
+    margin-right: 23%;
+    font-size: x-large;
+    background-image: linear-gradient(90deg, rgba(163,0,0,1) 0%, rgba(88,15,15,1) 13%, rgba(88,59,15,1) 17%, rgba(38,26,100,1) 29%, rgba(9,121,31,1) 35%, rgba(75,18,124,1) 50%, rgba(164,127,4,1) 66%, rgba(82,130,129,1) 83%, rgba(0,48,255,1) 100%);
+    background-size: 500% 100%;
+    animation: degrade 3s infinite alternate;
+}
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+    
+}
+#andando{
+    width: 8rem;
+    border: none;
+    animation: andar 5s infinite;
+}
+@keyframes andar {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 85%;
+    }
+    
+}
+/* matheus */
+/* vinicius */
