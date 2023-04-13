@@ -1,6 +1,6 @@
-@font-face {
-    font-family: texto;
-    src: url(../fontes/coolvetica\ rg.otf);
+@font-face { /* adicionar fonte*/
+    font-family: texto; /* nome da fonte */
+    src: url(../fontes/coolvetica\ rg.otf); /* local aonde está a fonte */
 }
 @font-face {
     font-family: dodger;
