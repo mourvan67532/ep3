@@ -13,7 +13,7 @@
 }
 /* body */
 body{ /* modifica toda a página */
-    background-image: linear-gradient(90deg, rgb(2, 47, 58) 0%, rgb(0, 91, 114) 50%, rgb(2, 130, 161) 100%);/* fundo com gradient*/
+    background-image: linear-gradient(90deg, rgba(38,3,3,1) 5%, rgba(88,15,15,1) 30%, rgba(152,0,0,1) 50%, rgba(88,15,15,1) 70%, rgba(38,3,3,1) 95%);/* fundo com gradient*/
     color: rgb(0, 71, 88); /* cor das letras*/
 }
 /* header */
@@ -52,13 +52,18 @@ header li{ /* lista no header */
 .headera{ /* mudar os links da lista*/
     text-decoration: none; /* retirar a decoração do texto*/
     font-size: x-large; /* tamanho da fonte*/
+    font-family: texto; /* fonte usada*/
 }
 .headera:hover{ /* animação do link no header ao passar o cursor*/
     color: #ac3840; /* cor da letra*/
-    background-color: rgb(193, 208, 221); /* cor de fundo*/
-    border: 3px dashed blue; /* borda*/
+    text-shadow: /* mudar a cor da borda da letra*/
+    -1px -1px 0px black, 
+    -1px 1px 0px black,      
+     1px -1px 0px black,    
+     1px 0px 0px black;
     padding: 4px; /* espaço entre a borda e o texto*/
     font-size: x-large; /* tamanho da fonte*/
+    text-decoration: underline; /* deixar o título sublinado*/
 }
 #imgheader{ /* logo no header*/
     width: 10rem; /* tamanho da logo*/
@@ -67,12 +72,12 @@ header li{ /* lista no header */
 .fundo h1{
     text-align: center;
     font-family: dodger;
-    color: rgb(1, 53, 66);
+    color: #030018;
     text-shadow: 
-    -1px -1px 0px lightblue, 
-    -1px 1px 0px lightblue,      
-     1px -1px 0px lightblue,    
-     1px 0px 0px lightblue;
+    -1px -1px 0px #e70000, 
+    -1px 1px 0px #e70000,      
+     1px -1px 0px #e70000,    
+     1px 0px 0px #e70000;
      font-size: xx-large;
 
 
@@ -90,6 +95,7 @@ header li{ /* lista no header */
 .fundo p{
     font-family: texto;
     text-indent: 25px;
+    font-size: large;
 }
 .fundo img{
     width: 35rem;
@@ -103,6 +109,14 @@ figcaption{
 }
 /* footer */
 
+
+/* index */
+.index{
+    background-image: url(../imagens/fundoindex.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
 
 /* mourvan */
 #buzina{ /* mudar o cursor ao passar na imagem */
@@ -151,5 +165,10 @@ figcaption{
 #mezah1{
     color: red;
     text-decoration: underline;
+    text-shadow: /* mudar a cor da borda da letra*/
+    -1px -1px 0px black, 
+    -1px 1px 0px black,      
+     1px -1px 0px black,    
+     1px 0px 0px black;
 }
 /* vinicius */
