@@ -105,41 +105,41 @@ figcaption{
 
 
 /* mourvan */
-#buzina{
-    cursor: pointer;
+#buzina{ /* mudar o cursor ao passar na imagem */
+    cursor: pointer; /* mudar o cursor*/
 }
 #mourvan{
-    color: white;
-    text-align: center;
-    border: 7px groove green;
-    border-radius: 1rem;
-    margin-left: 23%;
-    margin-right: 23%;
-    font-size: x-large;
-    background-image: linear-gradient(90deg, rgba(163,0,0,1) 0%, rgba(88,15,15,1) 13%, rgba(88,59,15,1) 17%, rgba(38,26,100,1) 29%, rgba(9,121,31,1) 35%, rgba(75,18,124,1) 50%, rgba(164,127,4,1) 66%, rgba(82,130,129,1) 83%, rgba(0,48,255,1) 100%);
-    background-size: 500% 100%;
-    animation: degrade 3s infinite alternate;
+    color: white; /* cor da letra*/
+    text-align: center; /* alinhar o texto ao centro*/
+    border: 7px groove green; /* adicionar borda*/
+    border-radius: 1rem; /* arrendondamento da borda*/
+    margin-left: 23%; /* margem para a esquerda*/
+    margin-right: 23%; /* margem para a direita*/
+    font-size: x-large; /* tamanho da fonte*/
+    background-image: linear-gradient(90deg, rgba(163,0,0,1) 0%, rgba(88,15,15,1) 13%, rgba(88,59,15,1) 17%, rgba(38,26,100,1) 29%, rgba(9,121,31,1) 35%, rgba(75,18,124,1) 50%, rgba(164,127,4,1) 66%, rgba(82,130,129,1) 83%, rgba(0,48,255,1) 100%); /* fundo com gradient*/
+    background-size: 500% 100%; /* tamanho do fundo para a animação*/
+    animation: degrade 3s infinite alternate; /* animação*/
 }
-@keyframes degrade {
+@keyframes degrade { /* animar o fundo da borda*/
     0% {
-        background-position-x: 0%;
+        background-position-x: 0%; /* posição do fundo*/
     }
     100%{
-        background-position-x: 100%;
+        background-position-x: 100%; /* posição do fundo*/
     }
     
 }
-#andando{
-    width: 8rem;
-    border: none;
-    animation: andar 5s infinite;
+#andando{ /* carro andando*/
+    width: 8rem; /* tamanho da imagem*/
+    border: none; /* retirar borda */
+    animation: andar 5s infinite; /* animação*/
 }
-@keyframes andar {
+@keyframes andar { /* animação para o carro andar*/
     from{
-        margin-left: 0%;
+        margin-left: 0%; /* posição para o surgir*/
     }
     to{
-        margin-left: 85%;
+        margin-left: 85%; /* posição para o carro sair*/
     }
     
 }
