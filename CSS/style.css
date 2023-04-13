@@ -61,7 +61,7 @@ header li{ /* lista no header */
     font-size: x-large; /* tamanho da fonte*/
 }
 #imgheader{ /* logo no header*/
-    width: 6rem; /* tamanho da logo*/
+    width: 10rem; /* tamanho da logo*/
 }
 /* main */
 .fundo h1{
@@ -130,16 +130,16 @@ figcaption{
     
 }
 #andando{ /* carro andando*/
-    width: 8rem; /* tamanho da imagem*/
+    width: 10rem; /* tamanho da imagem*/
     border: none; /* retirar borda */
-    animation: andar 5s infinite; /* animação*/
+    animation: andar 8s infinite; /* animação*/
 }
 @keyframes andar { /* animação para o carro andar*/
     from{
-        margin-left: 0%; /* posição para o surgir*/
+        margin-left: 85%; /* posição para o surgir*/
     }
     to{
-        margin-left: 85%; /* posição para o carro sair*/
+        margin-left: 0%; /* posição para o carro sair*/
     }
     
 }
