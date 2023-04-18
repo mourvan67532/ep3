@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- letras ficarem acentuadas corretamente  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros de Drift</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css"> <!-- mensionar o css  -->
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon"> <!-- icone  -->
+    <script>
+        function tocar(){ //fazer tocar som ao clicar na imagem do fusca
+            var buzina = new Audio();
+            buzina.src = "audio/buzina.mp3";
+            buzina.play();
+        }
+    </script>
+    <title>Carros_de_Drift</title> <!-- título da página -->
 </head>
 <body>
     <header>
@@ -19,6 +27,81 @@
             </ul>
         </nav>
     </header>
-    
+    <main class="fundo"> <!-- parte principal do site -->
+        <!-- as tags "h1" são títulos dos texto as tags "p" são os parágrafos dos textos e as tag "h2" são informações embaixo da imagens sobre o preço e e o ano de fabricação-->
+        <h1>Carros de Drift</h1>
+        <p>
+            Carros de drift são veículos modificados especificamente para a prática do drift, 
+            um estilo de direção em que o piloto controla o carro em derrapagens controladas, 
+            utilizando a força das rodas traseiras para deslizar em curvas fechadas.
+        </p>
+        <h1>Oque é Drift</h1>
+        <p>
+            Drift é um estilo de direção que consiste em controlar um carro em derrapagens controladas em curvas fechadas. 
+            O objetivo é manter o carro em movimento lateral enquanto ele se move ao longo da curva, usando a força das rodas traseiras para deslizar. 
+            O drift pode ser praticado em qualquer tipo de veículo, mas é mais comum em carros esportivos modificados, especialmente os japoneses.
+        </p>
+        <h1>Supra 1995</h1>
+        <p>
+            O Toyota Supra 1995 é um carro esportivo japonês que foi fabricado entre os anos de 1993 e 2002. É um modelo icônico, 
+            conhecido pelo seu desempenho excepcional e design elegante. O Supra 1995 apresenta um motor turbo de seis cilindros em linha, 
+            com uma potência de 320 cavalos de força e 315 lb-ft de torque.
+
+            O modelo possui uma carroceria aerodinâmica e elegante, com faróis retráteis e uma traseira com spoiler integrado. 
+            O interior é espaçoso e confortável, com bancos esportivos de couro e um painel de instrumentos digital. 
+            O Supra 1995 também apresenta uma suspensão ajustável, freios de alto desempenho e um sistema de tração traseira.
+        </p>
+        <p id="mourvan">⬇ Aperte na imagem abaixo para buzinar ⬇</p>
+        <figure> <!-- colocar uma imagem -->
+            <img src="imagens/fusca.jpg" alt="foto de um fusca" title="fusca" onclick="tocar()" id="buzina">
+            <figcaption><a href="https://www.flickr.com/photos/salomadoblog/5374191464/in/photolist-4t4fBM-2kqwSoi-4DKd4a-CPRF7-kyTBwR-8zFRfS-3YFYU-eeZnQN-3uz831-9bU8Tw-83iMEq-7sQRbD-8fgDPf-5Utt7G-2i5MUct-ny8bia-7sUPry-9zBD8D-3RwBax-wUnFMW-oeXXDj-5RiMR2-9soxpr-7nqSG2-9srx5C-9Gi4D6-bMK5Ha-jtX44L-buLJWq-Nq9XgV-NuH5aS-NuH8d5-jtTFJX-hb3EJ5-jtV7xk-jtTF36-jtX5p1-jtX2Hj-jtVJH7-jtV81z-jtX3b3-jtVGAm-jtTDZV-jtTCX4" target="_blank">www.flickr.com</a></figcaption>
+        </figure>
+        <h2>Foi produzido de 1993 a 2002.</h2>
+        <h1>Nissan Silvia S15</h1>
+        <p>
+            O Nissan Silvia S15 é um carro esportivo japonês que foi produzido entre os anos de 1999 e 2002. 
+            É um modelo icônico conhecido pelo seu design elegante, desempenho excepcional e popularidade no esporte de drift. 
+            O S15 apresenta um motor turbo de quatro cilindros em linha, com uma potência que varia de 217 a 247 cavalos de força.
+
+            O modelo possui uma carroceria aerodinâmica e elegante, com faróis escamoteáveis e uma traseira com um grande spoiler integrado. 
+            O interior é espaçoso e confortável, com bancos esportivos e um painel de instrumentos digital. O S15 também apresenta uma suspensão ajustável, 
+            freios de alto desempenho e um sistema de tração traseira.
+        </p>
+        <figure> <!-- colocar uma imagem -->
+            <img src="imagens/kombi.jpg" alt="foto de uma kombi" title="kombi">
+            <figcaption><a href="https://pixabay.com/pt/photos/carro-velho-vw-kombi-pau-3507405/" target="_blank">pixabay.com</a></figcaption>
+        </figure>
+        <h2>Foi produzido de 1999 a 2002.</h2>
+        <h1>Nissan 350z</h1>
+        <p>O Nissan 350Z é um carro esportivo japonês produzido entre os anos de 2002 e 2009. 
+            É um modelo icônico conhecido pelo seu design agressivo, desempenho excepcional e dirigibilidade esportiva. 
+            O 350Z apresenta um motor V6 de 3.5 litros, com uma potência de 287 a 306 cavalos de força e um torque de 260 a 268 lb-ft.
+
+            O modelo possui uma carroceria elegante e aerodinâmica, com faróis de xenônio e uma traseira curta e musculosa. 
+            O interior é espaçoso e confortável, com bancos esportivos e um painel de instrumentos completo. O 350Z também apresenta uma suspensão ajustável, 
+            freios de alto desempenho e um sistema de tração traseira.</p>
+        <figure> <!-- colocar uma imagem -->
+            <img src="imagens/escort.jpg" alt="foto de um Escort" title="escort">
+            <figcaption><a href="https://www.flickr.com/photos/133544887@N06/52553390381/in/photolist-2o4XS2B-2mmFnjH-2nqx3GR-2opLcGU-T5EYPS-2mRXAfh-2hfeaGW-95rKov-274NLE9-2kWhuYL-KdsPwy-2f9bxTC-27sHoAB-bTa1yz-bJ88AP-bTa2xk-2jkfCJ7-mLr8uP-bTa5iB-2gnoUbR-22oYPo1-bTa29v-25YMqPH-2mnfSNC-e5jxoC-HGejcp-oiLfpj-bEfieJ-bEfgnS-2mtaiG6-bEfnzQ-bEfiNm-bTa21t-26pmDvE-bTa1pv-bTa43a-2o4ZnyD-bEfmvu-bTa2j2-bEfgTb-2nzbZDC-bTa3BM-bEfjAN-bEfmP9-bTa6cn-bTa5ur-bEfiVC-bEfn8u-bTa32V-bTa6xg" target="_blank">www.flickr.com</a></figcaption>
+        </figure>
+        <h2>Foi produzido de 2002 a 2009.</h2>
+        <h1>GT-R R34</h1>
+        <p>
+            O Nissan Skyline GT-R R34 é um carro esportivo japonês produzido entre os anos de 1999 e 2002. 
+            É um modelo icônico conhecido pelo seu design agressivo, desempenho excepcional e popularidade no cenário de tuning e corridas. 
+            O R34 apresenta um motor turbo de seis cilindros em linha, com uma potência de 276 a 330 cavalos de força.
+
+            O modelo possui uma carroceria elegante e aerodinâmica, com faróis de xenônio e uma traseira curta e musculosa. 
+            O interior é espaçoso e confortável, com bancos esportivos e um painel de instrumentos completo. O R34 também apresenta uma suspensão ajustável, 
+            freios de alto desempenho e um sistema de tração integral.
+        </p>
+        <figure> <!-- colocar uma imagem -->
+            <img src="imagens/chevette.jpg" alt="foto de um chevette" title="Chevette">
+            <figcaption><a href="https://www.flickr.com/photos/crfajardo/177345743/in/photolist-hP6z5x-2juaktD-2mN3UFQ-gEWHe-2n9UUkD-j6HVfh-2odeEhV-269Uy2u-28AakwV-bUoQyc-7q9WFV-7qdT91-88Yt5Z-8ZNCPL-2nrn4PW-2nUsL7x-f8YHeL-2njJThW-7qdLmN-7qdLmQ-qvygcT-GaAeE9-dLr1V8-QoA9up-24J2dRd-7qdJys-7q9VAT-7q9VAH-2oeHJWT-2oeLfPM-dKW4bE-7qdT95-2oqK1uc-7qdJyq-7q9VAZ-7q9VAM-dLe285-7q9VAR-7q9QtD-7q9U8k-7q9QtH-7q9VAF-7q9WG6-bwbhke-7q9Qu2-7q9SUn-NVa7uH-CTJapq-7q9Qu4-2kWumLJ" target="_blank">www.flickr.com</a></figcaption>
+        </figure>
+        <h2>Foi produzido de 1999 a 2002.</h2>
+    </main>
+<!-- https://autopapo.uol.com.br/noticia/10-carros-antigos-mais-buscados-2022/ -->
+<!-- https://www.litoralcar.com.br/blog/curiosidades/os-8-carros-classicos-brasileiros-mais-iconicos/ -->
 </body>
 </html>
