@@ -89,8 +89,10 @@ header li{ /* lista no header */
     padding-right: 2rem;
     margin-left: 23%;
     margin-right: 23%;
-    background-color: aliceblue;
+    background-color: var(--background);
     border-radius: 5rem;
+    color: var(--color);
+
 }
 .fundo p{
     font-family: texto;
@@ -119,6 +121,10 @@ figcaption{
 }
 
 /* mourvan */
+:root{
+    --background: rgb(235, 235, 235);
+    --color: black ;
+}
 #buzina{ /* mudar o cursor ao passar na imagem */
     cursor: pointer; /* mudar o cursor*/
 }
@@ -156,6 +162,30 @@ figcaption{
         margin-left: 0%; /* posição para o carro sair*/
     }
     
+}
+:root:has(#tema:checked){
+    --background: #2C2726;
+    --color: white;
+}
+
+.menu{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    border: 1px solid aliceblue ;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    display: flex;
+    margin-left: 23%;
+    margin-right: 23%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: end;
+    font-size: xx-large;
+    border-top: none;
+}
+#tema{
+    display: none;
+    cursor: pointer;
 }
 /* matheus */
 .meza:hover{
