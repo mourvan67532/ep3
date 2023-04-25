@@ -15,6 +15,7 @@
 body{ /* modifica toda a página */
     background-image: linear-gradient(90deg, rgba(38,3,3,1) 5%, rgba(88,15,15,1) 30%, rgba(152,0,0,1) 50%, rgba(88,15,15,1) 70%, rgba(38,3,3,1) 95%);/* fundo com gradient*/
     color: rgb(0, 71, 88); /* cor das letras*/
+    margin: 0; /*retirar margem da pagina*/
 }
 /* header */
 header{
@@ -84,7 +85,7 @@ header li{ /* lista no header */
 }
 .fundo{
     margin-top: 2rem;    
-    border: 1px solid aliceblue;
+    border: 1px solid var(--borda);
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: 23%;
@@ -92,6 +93,7 @@ header li{ /* lista no header */
     background-color: var(--background);
     border-radius: 5rem;
     color: var(--color);
+
 
 }
 .fundo p{
@@ -124,6 +126,7 @@ figcaption{
 :root{
     --background: rgb(235, 235, 235);
     --color: black ;
+    --borda: aliceblue;
 }
 #buzina{ /* mudar o cursor ao passar na imagem */
     cursor: pointer; /* mudar o cursor*/
@@ -163,29 +166,34 @@ figcaption{
     }
     
 }
-:root:has(#tema:checked){
+:root:has(#dark:checked){
     --background: #2C2726;
     --color: white;
+    --borda: #2c2726;
 }
-
 .menu{
     background-color: rgb(235, 235, 235);
     color: black;
-    border: 1px solid aliceblue ;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border: 9px solid black ;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
     display: flex;
-    margin-left: 23%;
+    margin-left: 65%;
     margin-right: 23%;
     padding-left: 5rem;
     padding-right: 5rem;
-    justify-content: end;
-    font-size: xx-large;
+    justify-content: space-around;
     border-top: none;
+
 }
-#tema{
-    display: none;
+#menudark{
     cursor: pointer;
+}
+#dark{
+    display: none;   
+}
+#lua{
+    width: 3rem;
 }
 /* matheus */
 .meza:hover{
