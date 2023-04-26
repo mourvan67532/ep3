@@ -112,8 +112,19 @@ figcaption{
     font-size: small;
 }
 /* footer */
-
-
+footer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+footer img{
+    width: 10rem;
+}
+#footer p{
+    padding: 0;
+    margin: 0;
+}
 /* index */
 .index{
     background-image: url(../imagens/fundoindex.jpg);
@@ -127,6 +138,7 @@ figcaption{
     --background: rgb(235, 235, 235);
     --color: black ;
     --borda: aliceblue;
+    --bordasol: 10px solid #2c2726;
 }
 #buzina{ /* mudar o cursor ao passar na imagem */
     cursor: pointer; /* mudar o cursor*/
@@ -170,21 +182,26 @@ figcaption{
     --background: #2C2726;
     --color: white;
     --borda: #2c2726;
+    --semlua: none;
+    --bordasol: 10px solid aliceblue;
 }
+:root:has(#dark:not(:checked)){
+    --semsol: none;
+}
+
 .menu{
-    background-color: rgb(235, 235, 235);
-    color: black;
-    border: 9px solid black ;
-    border-bottom-left-radius: 50rem;
-    border-bottom-right-radius: 50rem;
+    background-color: var(--background);
     display: flex;
-    margin-left: 65%;
+    margin-left: 58%;
     margin-right: 23%;
     padding-left: 5rem;
     padding-right: 5rem;
     justify-content: space-around;
-    border-top: none;
-
+    border-radius: 2rem;
+    padding: 2rem;
+    position: absolute;
+    top: 8.3rem;
+    border: var(--bordasol);
 }
 #menudark{
     cursor: pointer;
@@ -194,6 +211,13 @@ figcaption{
 }
 #lua{
     width: 3rem;
+    border: none;
+    display: var(--semlua);
+}
+#sol{
+    width: 3rem;
+    border: none;
+    display: var(--semsol);
 }
 /* matheus */
 .meza:hover{
