@@ -113,17 +113,39 @@ figcaption{
 }
 /* footer */
 footer{
-    background-color: aliceblue;
+    background-color: rgb(235, 235, 235);
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
 }
 footer img{
-    width: 10rem;
+    width: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 3px dashed black;
+    padding: 5px;
+    border-radius: 2rem;
 }
-#footer p{
+#rodape{
+    padding: 2rem;
+}
+footer p{
     padding: 0;
     margin: 0;
+    font-size: larger;
+}
+#footer2 h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(231,0,0,1) , rgba(231,135,0,1) , rgba(231,0,0,1) );
+    color: white;
+    text-shadow: /* mudar a cor da borda da letra*/
+    -1px -1px 0px black, 
+    -1px 1px 0px black,      
+     1px -1px 0px black,    
+     1px 0px 0px black;
+     font-family: tires;
 }
 /* index */
 .index{
@@ -135,48 +157,10 @@ footer img{
 
 /* mourvan */
 :root{
-    --background: rgb(235, 235, 235);
+    --background: aliceblue;
     --color: black ;
     --borda: aliceblue;
     --bordasol: 10px solid #2c2726;
-}
-#buzina{ /* mudar o cursor ao passar na imagem */
-    cursor: pointer; /* mudar o cursor*/
-}
-#mourvan{
-    color: white; /* cor da letra*/
-    text-align: center; /* alinhar o texto ao centro*/
-    border: 7px groove green; /* adicionar borda*/
-    border-radius: 1rem; /* arrendondamento da borda*/
-    margin-left: 23%; /* margem para a esquerda*/
-    margin-right: 23%; /* margem para a direita*/
-    font-size: x-large; /* tamanho da fonte*/
-    background-image: linear-gradient(90deg, rgba(163,0,0,1) 0%, rgba(88,15,15,1) 13%, rgba(88,59,15,1) 17%, rgba(38,26,100,1) 29%, rgba(9,121,31,1) 35%, rgba(75,18,124,1) 50%, rgba(164,127,4,1) 66%, rgba(82,130,129,1) 83%, rgba(0,48,255,1) 100%); /* fundo com gradient*/
-    background-size: 500% 100%; /* tamanho do fundo para a animação*/
-    animation: degrade 3s infinite alternate; /* animação*/
-}
-@keyframes degrade { /* animar o fundo da borda*/
-    0% {
-        background-position-x: 0%; /* posição do fundo*/
-    }
-    100%{
-        background-position-x: 100%; /* posição do fundo*/
-    }
-    
-}
-#andando{ /* carro andando*/
-    width: 10rem; /* tamanho da imagem*/
-    border: none; /* retirar borda */
-    animation: andar 8s infinite; /* animação*/
-}
-@keyframes andar { /* animação para o carro andar*/
-    from{
-        margin-left: 85%; /* posição para o surgir*/
-    }
-    to{
-        margin-left: 0%; /* posição para o carro sair*/
-    }
-    
 }
 :root:has(#dark:checked){
     --background: #2C2726;
@@ -192,7 +176,7 @@ footer img{
 .menu{
     background-color: var(--background);
     display: flex;
-    margin-left: 58%;
+    margin-left: 82%;
     margin-right: 23%;
     padding-left: 5rem;
     padding-right: 5rem;
