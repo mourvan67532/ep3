@@ -34,14 +34,15 @@ header{
      1px -1px 0px blue,    
      1px 0px 0px blue;
     text-decoration: none; /* retirar o underline no link*/
+    transition: 0.3s;
 }
 #h1header:hover{ /* animação ao passar o curso*/
     text-decoration: underline; /* deixar o título sublinado*/
     text-shadow: /* mudar a cor da borda da letra*/
-    -1px -1px 0px #ac3840, 
-    -1px 1px 0px #ac3840,      
-     1px -1px 0px #ac3840,    
-     1px 0px 0px #ac3840;
+    -2px -2px 0px #ac3840, 
+    -2px 2px 0px #ac3840,      
+     2px -2px 0px #ac3840,    
+     2px 0px 0px #ac3840;
 }
 .pagina{ /* espaço entre o título e os links*/
     padding-left: 30px; /* tamanho do espaço*/
@@ -54,6 +55,7 @@ header li{ /* lista no header */
     text-decoration: none; /* retirar a decoração do texto*/
     font-size: x-large; /* tamanho da fonte*/
     font-family: texto; /* fonte usada*/
+    transition: 0.2s;
 }
 .headera:hover{ /* animação do link no header ao passar o cursor*/
     color: #ac3840; /* cor da letra*/
@@ -75,10 +77,10 @@ header li{ /* lista no header */
     font-family: dodger;
     color: #030018;
     text-shadow: 
-    -1px -1px 0px #e70000, 
-    -1px 1px 0px #e70000,      
-     1px -1px 0px #e70000,    
-     1px 0px 0px #e70000;
+    -2px -2px 0px #e70000, 
+    -2px 2px 0px #e70000,      
+     2px -2px 0px #e70000,    
+     2px 0px 0px #e70000;
      font-size: xx-large;
 
 
@@ -106,6 +108,9 @@ header li{ /* lista no header */
     margin: auto;
     display: block;
     border: 5px solid rgb(31, 0, 31);
+    box-shadow: 0 0 10px 8px  rgb(31, 0, 31), inset
+    0 0 10px 2px rgb(31, 0, 31);
+    border-radius: 18px;
 }
 figcaption{
     text-align: center;
@@ -122,10 +127,13 @@ footer img{
     width: 15rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    border: 3px dashed black;
     padding: 5px;
     border-radius: 2rem;
+    box-shadow:
+    inset 60px 0 120px rgba(255, 106, 106, 0.493), 
+    inset -60px 0 120px rgba(247, 180, 57, 0.603);     
 }
+
 #rodape{
     padding: 2rem;
 }
@@ -141,10 +149,10 @@ footer p{
     background: linear-gradient(90deg, rgba(231,0,0,1) , rgba(231,135,0,1) , rgba(231,0,0,1) );
     color: white;
     text-shadow: /* mudar a cor da borda da letra*/
-    -1px -1px 0px black, 
-    -1px 1px 0px black,      
-     1px -1px 0px black,    
-     1px 0px 0px black;
+    -2px -2px 0px black, 
+    -2px 2px 0px black,      
+     2px -2px 0px black,    
+     2px 0px 0px black;
      font-family: tires;
 }
 /* index */
@@ -154,7 +162,6 @@ footer p{
     background-size: 100%;
    
 }
-
 /* mourvan */
 :root{
     --background: aliceblue;
