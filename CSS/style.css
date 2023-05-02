@@ -19,7 +19,7 @@ body{ /* modifica toda a página */
 }
 /* header */
 header{
-    background-color: rgb(235, 235, 235); /* cor de fundo do header*/
+    background-color: var(--background); /* cor de fundo do header*/
     display: flex; /* posicionar os elementos do header */
     justify-content: center; /* alinhar o header ao centro*/
     align-items: center; /* posicionar ao centro em relação ou topo e em baixo */
@@ -56,6 +56,7 @@ header li{ /* lista no header */
     font-size: x-large; /* tamanho da fonte*/
     font-family: texto; /* fonte usada*/
     transition: 0.2s;
+    color: blue;
 }
 .headera:hover{ /* animação do link no header ao passar o cursor*/
     color: #ac3840; /* cor da letra*/
@@ -95,8 +96,6 @@ header li{ /* lista no header */
     background-color: var(--background);
     border-radius: 5rem;
     color: var(--color);
-
-
 }
 .fundo p{
     font-family: texto;
@@ -116,12 +115,60 @@ figcaption{
     text-align: center;
     font-size: small;
 }
+/* modo */
+:root{
+    --background: aliceblue; /* variável da cor de fundo */
+    --color: black ; /* variável da cor da letra */
+    --borda: aliceblue; /* variável da cor da borda*/
+    --bordasol: 10px solid #2c2726; /* variável para borda da imagem do sol */
+}
+:root:has(#dark:checked){ /* checkbox  marcada*/
+    --background: #2C2726; /* variável da nova cor de fundo*/
+    --color: aliceblue; /* variável da nova cor de letra*/
+    --borda: #2c2726; /* variável da nova cor da borda*/
+    --semlua: none; /* retirar a imagem da lua*/
+    --bordasol: 10px solid aliceblue; /* borda da imagem do sol*/
+}
+:root:has(#dark:not(:checked)){ /* checkbox não marcada*/
+    --semsol: none; /* retirar imagem do sol*/
+}
+
+.menu{ /*quadrado onde fica a imagem de trocar modo*/
+    background-color: var(--background); /* cor de fundo*/
+    display: flex; /* posicionamento*/
+    margin-left: 82%; /* margem esquerda*/
+    margin-right: 23%; /*margem direita*/
+    border-radius: 2rem; /* arrendodar a borda*/
+    position: absolute; /* ficar separado do main*/
+    padding-left: 2rem; /* espaço entre a borda para a esquerda*/
+    padding-right: 2rem; /* espaço entre a borda para a direita*/
+    padding-bottom: 1rem; /* espaço entre a borda para baixo*/
+    top: 8.3rem; /* espaço do header*/
+    border: var(--bordasol); /* borda */
+    text-align: center; /* alinar ao centro*/
+    color: var(--color); /* cor da letra */
+}
+#menudark{ 
+    cursor: pointer; /* mudar cursor*/
+}
+#dark{
+    display: none; /* retirar a checkbox*/
+}
+#lua{ /* imagem da lua*/
+    width: 3rem; /* tamanho da imagem*/
+    display: var(--semlua); /* retirar imagem*/
+}
+#sol{
+    width: 3rem; /* tamanho da imagem*/
+    display: var(--semsol); /* retirar imagem*/
+}
 /* footer */
 footer{
-    background-color: rgb(235, 235, 235);
+    background-color: var(--background);
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
+    color: var(--color);
 }
 footer img{
     width: 15rem;
@@ -163,61 +210,30 @@ footer p{
    
 }
 /* mourvan */
-:root{
-    --background: aliceblue;
-    --color: black ;
-    --borda: aliceblue;
-    --bordasol: 10px solid #2c2726;
+#mourvan{
+    border: 1px solid none; /* borda */
+    background-image: linear-gradient(90deg, rgba(3,0,231,0.8183648459383753) 0%, rgba(15,0,231,0.8211659663865546) 30%, rgba(145,0,15,0.7483368347338936) 63%, rgba(231,0,0,0.7903536414565826) 100%); /* fundo gradient*/
+    padding: 1rem; /* espaço entre o titulo e a borda */
+    background-size: 500% 100%; /* tamaho do fundo */
+    border-radius: 5rem; /* arrendondar a borda */
+    animation: mourvan 2s alternate infinite; /* animação do fundo*/
 }
-:root:has(#dark:checked){
-    --background: #2C2726;
-    --color: white;
-    --borda: #2c2726;
-    --semlua: none;
-    --bordasol: 10px solid aliceblue;
-}
-:root:has(#dark:not(:checked)){
-    --semsol: none;
-}
-
-.menu{
-    background-color: var(--background);
-    display: flex;
-    margin-left: 82%;
-    margin-right: 23%;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    justify-content: space-around;
-    border-radius: 2rem;
-    padding: 2rem;
-    position: absolute;
-    top: 8.3rem;
-    border: var(--bordasol);
-}
-#menudark{
-    cursor: pointer;
-}
-#dark{
-    display: none;   
-}
-#lua{
-    width: 3rem;
-    border: none;
-    display: var(--semlua);
-}
-#sol{
-    width: 3rem;
-    border: none;
-    display: var(--semsol);
+@keyframes mourvan{ /* animação*/
+    0%{
+        background-position-x: 0%; /* mudar posição do fundo */
+    }
+    100%{
+        background-position-x: 100%; /* mudar posição do fundo */
+    }
 }
 /* matheus */
 .meza:hover{
-    border: 5px solid gold;
-    border-radius: 5rem;
+    border: 5px solid gold; /* borda */
+    border-radius: 5rem; /* arrendondar borda */
 }
-#mezah1{
-    color: red;
-    text-decoration: underline;
+#mezah1{ 
+    color: red; /* cor do texto */
+    text-decoration: underline; /* sublinado do texto */
     text-shadow: /* mudar a cor da borda da letra*/
     -1px -1px 0px black, 
     -1px 1px 0px black,      
