@@ -39,7 +39,7 @@ header{
 #h1header:hover{ /* animação ao passar o curso*/
     text-decoration: underline; /* deixar o título sublinado*/
     text-shadow: /* mudar a cor da borda da letra*/
-    -2px -2px 0px #ac3840, 
+    -2px -2px 0px #ac3840,
     -2px 2px 0px #ac3840,      
      2px -2px 0px #ac3840,    
      2px 0px 0px #ac3840;
@@ -96,6 +96,7 @@ header li{ /* lista no header */
     background-color: var(--background);
     border-radius: 5rem;
     color: var(--color);
+    box-shadow: var(--borda-do-fundo)
 }
 .fundo p{
     font-family: texto;
@@ -107,8 +108,8 @@ header li{ /* lista no header */
     margin: auto;
     display: block;
     border: 5px solid rgb(31, 0, 31);
-    box-shadow: 0 0 10px 8px  rgb(31, 0, 31), inset
-    0 0 10px 2px rgb(31, 0, 31);
+    box-shadow: 0 0 10px 8px rgb(54, 0, 104), inset /* sombra da borda*/
+    0 0 10px 2px rgb(54, 0, 104);
     border-radius: 18px;
 }
 figcaption{
@@ -128,6 +129,8 @@ figcaption{
     --borda: #2c2726; /* variável da nova cor da borda*/
     --semlua: none; /* retirar a imagem da lua*/
     --bordasol: 10px solid aliceblue; /* borda da imagem do sol*/
+    --borda-do-fundo: 0 0 10px 8px red, inset /* sombra da borda*/
+    0 0 10px 2px red;
 }
 :root:has(#dark:not(:checked)){ /* checkbox não marcada*/
     --semsol: none; /* retirar imagem do sol*/
@@ -177,7 +180,7 @@ footer img{
     padding: 5px;
     border-radius: 2rem;
     box-shadow:
-    inset 60px 0 120px rgba(255, 106, 106, 0.493), 
+    inset 60px 0 120px rgba(255, 106, 106, 0.493), /* sombra da borda para dentro da borda*/
     inset -60px 0 120px rgba(247, 180, 57, 0.603);     
 }
 
@@ -200,14 +203,22 @@ footer p{
     -2px 2px 0px black,      
      2px -2px 0px black,    
      2px 0px 0px black;
-     font-family: tires;
+     font-family: tires; /* */
 }
 /* index */
-.index{
-    background-image: url(../imagens/fundoindex.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-   
+.indexbotao{ /*botão no index para cada página*/
+    border: 4px solid darkred; /*borda*/
+    border-radius: 1.5rem; /* arrendondar a borda*/
+    text-align: center; /* alinar ao centro*/
+    margin-left: 27%; /*margem para a esquerda*/
+    margin-right: 27%; /*margem para a direita*/
+    padding: 1rem; /* espaço entre o texto e a borda*/
+    color: darkred; /*cor da letra*/
+    box-shadow: 0 0 10px 8px  red, inset /* sombra da borda*/
+    0 0 10px 2px red;
+}
+.index a{
+    text-decoration: none;
 }
 /* mourvan */
 #mourvan{
