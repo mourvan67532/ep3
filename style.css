@@ -1,0 +1,254 @@
+/* fontes */
+@font-face { /* adicionar fonte*/
+    font-family: texto; /* nome da fonte */
+    src: url(../fontes/coolvetica\ rg.otf); /* local aonde está a fonte */
+}
+@font-face { /* adicionar fonte*/
+    font-family: dodger; /* nome da fonte */
+    src: url(../fontes/dodger3superital.ttf); /* local aonde está a fonte */
+}
+@font-face { /* adicionar fonte*/
+    font-family: tires; /* nome da fonte */
+    src: url(../fontes/MAGNETOB.TTF); /* local aonde está a fonte */
+}
+/* body */
+body{ /* modifica toda a página */
+    background-image: linear-gradient(90deg, rgba(38,3,3,1) 5%, rgba(88,15,15,1) 30%, rgba(152,0,0,1) 50%, rgba(88,15,15,1) 70%, rgba(38,3,3,1) 95%);/* fundo com gradient*/
+    color: rgb(0, 71, 88); /* cor das letras*/
+    margin: 0; /*retirar margem da pagina*/
+}
+/* header */
+header{
+    background-color: var(--background); /* cor de fundo do header*/
+    display: flex; /* posicionar os elementos do header */
+    justify-content: center; /* alinhar o header ao centro*/
+    align-items: center; /* posicionar ao centro em relação ou topo e em baixo */
+}
+#h1header{ /* modificar o título no header*/
+    font-family: tires; /* fonte usada*/
+    color: black; /* cor da fonte*/
+    font-size: 3rem; /* tamanho da fonte*/
+    text-shadow: /* borda nas letras*/
+    -1px -1px 0px blue, 
+    -1px 1px 0px blue,      
+     1px -1px 0px blue,    
+     1px 0px 0px blue;
+    text-decoration: none; /* retirar o underline no link*/
+    transition: 0.3s;
+}
+#h1header:hover{ /* animação ao passar o curso*/
+    text-decoration: underline; /* deixar o título sublinado*/
+    text-shadow: /* mudar a cor da borda da letra*/
+    -2px -2px 0px #ac3840,
+    -2px 2px 0px #ac3840,      
+     2px -2px 0px #ac3840,    
+     2px 0px 0px #ac3840;
+}
+.pagina{ /* espaço entre o título e os links*/
+    padding-left: 30px; /* tamanho do espaço*/
+}
+header li{ /* lista no header */
+    padding-left: 15px; /* espaço entre cada elemento da lista*/
+    display: inline-flex; /* colocar a lista em linha*/
+}
+.headera{ /* mudar os links da lista*/
+    text-decoration: none; /* retirar a decoração do texto*/
+    font-size: x-large; /* tamanho da fonte*/
+    font-family: texto; /* fonte usada*/
+    transition: 0.2s;
+    color: blue;
+}
+.headera:hover{ /* animação do link no header ao passar o cursor*/
+    color: #ac3840; /* cor da letra*/
+    text-shadow: /* mudar a cor da borda da letra*/
+    -1px -1px 0px black, 
+    -1px 1px 0px black,      
+     1px -1px 0px black,    
+     1px 0px 0px black;
+    padding: 4px; /* espaço entre a borda e o texto*/
+    font-size: x-large; /* tamanho da fonte*/
+    text-decoration: underline; /* deixar o título sublinado*/
+}
+#imgheader{ /* logo no header*/
+    width: 10rem; /* tamanho da logo*/
+}
+/* main */
+.fundo h1{ /*tiTulo dos textos*/
+    text-align: center; /*alinhar ao centro*/
+    font-family: dodger; /*estilo da fonte*/
+    color: #030018; /*cor da letra*/
+    text-shadow: /*borda na letra*/ 
+    -2px -2px 0px #e70000, 
+    -2px 2px 0px #e70000,      
+     2px -2px 0px #e70000,    
+     2px 0px 0px #e70000;
+     font-size: xx-large; /*tamanho da letra*/
+
+
+}
+.fundo{ /*fundo dos textos*/
+    margin-top: 2rem; /*margem para cima*/   
+    border: 1px solid var(--borda); /*borda*/
+    padding-left: 2rem; /*espaço entre os textos e a borda*/
+    padding-right: 2rem;/*espaço entre os textos e a borda*/
+    margin-left: 23%;/*margem para esquerda*/
+    margin-right: 23%;/*margem para direita*/
+    background-color: var(--background);/*cor do fundo*/
+    border-radius: 5rem;/*arredondamento da borda*/
+    color: var(--color);/*cor da letra*/
+    box-shadow: var(--borda-do-fundo)/*sombra em volta do fundo*/
+}
+.fundo p{ /*paragrafos*/
+    font-family: texto;/*estilo da fonte*/
+    text-indent: 25px;/*espaço para começar paragrafo*/
+    font-size: large;/*tamanho da fonte*/
+}
+.fundo img{ /* imagem*/
+    width: 35rem;/*tamanho da imagem*/
+    margin: auto;/*alinhar o centro da pagina*/
+    display: block;/*posicionar imagem*/
+    border: 5px solid rgb(31, 0, 31);/*borda da imagem*/
+    box-shadow: 0 0 10px 8px rgb(54, 0, 104), inset /* sombra da borda*/
+    0 0 10px 2px rgb(54, 0, 104);
+    border-radius: 18px;/*arredondamento das bordas*/
+}
+figcaption{ /*local do link*/
+    text-align: center;/*alinhar texto*/
+    font-size: small;/*tamanho da fonte*/
+}
+/* modo */
+:root{ /*variaveis padrao*/
+    --background: aliceblue; /* variável da cor de fundo */
+    --color: black ; /* variável da cor da letra */
+    --borda: aliceblue; /* variável da cor da borda*/
+    --bordasol: 10px solid #2c2726; /* variável para borda da imagem do sol */
+}
+:root:has(#dark:checked){ /* checkbox  marcada*/
+    --background: #2C2726; /* variável da nova cor de fundo*/
+    --color: aliceblue; /* variável da nova cor de letra*/
+    --borda: #2c2726; /* variável da nova cor da borda*/
+    --semlua: none; /* retirar a imagem da lua*/
+    --bordasol: 10px solid aliceblue; /* borda da imagem do sol*/
+    --borda-do-fundo: 0 0 10px 8px red, inset /* sombra da borda*/
+    0 0 10px 2px red;
+}
+:root:has(#dark:not(:checked)){ /* checkbox não marcada*/
+    --semsol: none; /* retirar imagem do sol*/
+}
+
+.menu{ /*quadrado onde fica a imagem de trocar modo*/
+    background-color: var(--background); /* cor de fundo*/
+    display: flex; /* posicionamento*/
+    margin-left: 82%; /* margem esquerda*/
+    margin-right: 23%; /*margem direita*/
+    border-radius: 2rem; /* arrendodar a borda*/
+    position: absolute; /* ficar separado do main*/
+    padding-left: 2rem; /* espaço entre a borda para a esquerda*/
+    padding-right: 2rem; /* espaço entre a borda para a direita*/
+    padding-bottom: 1rem; /* espaço entre a borda para baixo*/
+    top: 8.3rem; /* espaço do header*/
+    border: var(--bordasol); /* borda */
+    text-align: center; /* alinar ao centro*/
+    color: var(--color); /* cor da letra */
+}
+#menudark{ 
+    cursor: pointer; /* mudar cursor*/
+}
+#dark{
+    display: none; /* retirar a checkbox*/
+}
+#lua{ /* imagem da lua*/
+    width: 3rem; /* tamanho da imagem*/
+    display: var(--semlua); /* retirar imagem*/
+}
+#sol{
+    width: 3rem; /* tamanho da imagem*/
+    display: var(--semsol); /* retirar imagem*/
+}
+/* footer */
+footer{ /*rodapé*/
+    background-color: var(--background); /*cor do fundo*/
+    display:flex; /*posicionamento*/
+    justify-content:space-around; /*alinhar os elementos*/
+    margin-top: 1rem; /*margem do topo*/
+    color:var(--color); /*cor da letra*/
+}
+footer img{ /*imagem do rodapé*/
+    width: 15rem; /*largura da imagem*/
+    margin-top: 3rem; /*margem do topo*/
+    margin-bottom: 3rem;  /*margem de baixo*/
+    padding: 5px; /*espaço para aumentar fundo da imagem*/
+    border-radius: 2rem;/*arredondar a borda*/
+    box-shadow: /*sombra para dentro da borda*/
+    inset 60px 0 120px rgba(255, 106, 106, 0.493), /* sombra da borda para dentro da borda*/
+    inset -60px 0 120px rgba(247, 180, 57, 0.603);     
+}
+
+#rodape{ /*espaço entre a borda do rodapé e os elementos dentro*/
+    padding: 2rem;/*espaço para nao ficar colado*/
+}
+footer p{ /*texto no rodapé*/
+    padding: 0;/*retirar o espaço entre os elementos*/
+    margin: 0;/*retirar margem*/
+    font-size: larger;/*tamanho da fonte*/
+}
+#footer2 h2{ /*linha do rodapé*/
+    text-align: center;/*alinhar texto ao centro*/
+    padding: 0;/*retirar os espaços*/
+    margin: 0;/*retirar a margem*/
+    background: linear-gradient(90deg, rgba(231,0,0,1) , rgba(231,135,0,1) , rgba(231,0,0,1) );/*fundo com gradiende*/
+    color: white;/* cor da letra*/
+    text-shadow: /* mudar a cor da borda da letra*/
+    -2px -2px 0px black, 
+    -2px 2px 0px black,      
+     2px -2px 0px black,    
+     2px 0px 0px black;
+     font-family: tires; /*estilo da fonte */
+}
+/* index */
+.indexbotao{ /*botão no index para cada página*/
+    border: 4px solid darkred; /*borda*/
+    border-radius: 1.5rem; /* arrendondar a borda*/
+    text-align: center; /* alinar ao centro*/
+    margin-left: 27%; /*margem para a esquerda*/
+    margin-right: 27%; /*margem para a direita*/
+    padding: 1rem; /* espaço entre o texto e a borda*/
+    color: darkred; /*cor da letra*/
+    box-shadow: 0 0 10px 8px  red, inset /* sombra da borda*/
+    0 0 10px 2px red;
+}
+.index a{/*link para as paginas dentro do botao*/
+    text-decoration: none;/*retirar sublinhado*/
+}
+/* mourvan */
+#mourvan{
+    border: 1px solid none; /* borda */
+    background-image: linear-gradient(90deg, rgba(3,0,231,0.8183648459383753) 0%, rgba(15,0,231,0.8211659663865546) 30%, rgba(145,0,15,0.7483368347338936) 63%, rgba(231,0,0,0.7903536414565826) 100%); /* fundo gradient*/
+    padding: 1rem; /* espaço entre o titulo e a borda */
+    background-size: 500% 100%; /* tamaho do fundo */
+    border-radius: 5rem; /* arrendondar a borda */
+    animation: mourvan 2s alternate infinite; /* animação do fundo*/
+}
+@keyframes mourvan{ /* animação*/
+    0%{
+        background-position-x: 0%; /* mudar posição do fundo */
+    }
+    100%{
+        background-position-x: 100%; /* mudar posição do fundo */
+    }
+}
+/* matheus */
+.meza:hover{/*qunado passar cursor sobre a imagem, mudar sua bord*/
+    border: 5px solid gold; /* borda */
+    border-radius: 5rem; /* arrendondar borda */
+}
+#mezah1{ /*titulo da minha pagina*/
+    color: red; /* cor do texto */
+    text-decoration: underline; /* sublinado do texto */
+    text-shadow: /* mudar a cor da borda da letra*/
+    -1px -1px 0px black, 
+    -1px 1px 0px black,      
+     1px -1px 0px black,    
+     1px 0px 0px black;
+}
+/* vinicius */
