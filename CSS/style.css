@@ -73,51 +73,51 @@ header li{ /* lista no header */
     width: 10rem; /* tamanho da logo*/
 }
 /* main */
-.fundo h1{
-    text-align: center;
-    font-family: dodger;
-    color: #030018;
-    text-shadow: 
+.fundo h1{ /*tiTulo dos textos*/
+    text-align: center; /*alinhar ao centro*/
+    font-family: dodger; /*estilo da fonte*/
+    color: #030018; /*cor da letra*/
+    text-shadow: /*borda na letra*/ 
     -2px -2px 0px #e70000, 
     -2px 2px 0px #e70000,      
      2px -2px 0px #e70000,    
      2px 0px 0px #e70000;
-     font-size: xx-large;
+     font-size: xx-large; /*tamanho da letra*/
 
 
 }
-.fundo{
-    margin-top: 2rem;    
-    border: 1px solid var(--borda);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: 23%;
-    margin-right: 23%;
-    background-color: var(--background);
-    border-radius: 5rem;
-    color: var(--color);
-    box-shadow: var(--borda-do-fundo)
+.fundo{ /*fundo dos textos*/
+    margin-top: 2rem; /*margem para cima*/   
+    border: 1px solid var(--borda); /*borda*/
+    padding-left: 2rem; /*espaço entre os textos e a borda*/
+    padding-right: 2rem;/*espaço entre os textos e a borda*/
+    margin-left: 23%;/*margem para esquerda*/
+    margin-right: 23%;/*margem para direita*/
+    background-color: var(--background);/*cor do fundo*/
+    border-radius: 5rem;/*arredondamento da borda*/
+    color: var(--color);/*cor da letra*/
+    box-shadow: var(--borda-do-fundo)/*sombra em volta do fundo*/
 }
-.fundo p{
-    font-family: texto;
-    text-indent: 25px;
-    font-size: large;
+.fundo p{ /*paragrafos*/
+    font-family: texto;/*estilo da fonte*/
+    text-indent: 25px;/*espaço para começar paragrafo*/
+    font-size: large;/*tamanho da fonte*/
 }
-.fundo img{
-    width: 35rem;
-    margin: auto;
-    display: block;
-    border: 5px solid rgb(31, 0, 31);
+.fundo img{ /* imagem*/
+    width: 35rem;/*tamanho da imagem*/
+    margin: auto;/*alinhar o centro da pagina*/
+    display: block;/*posicionar imagem*/
+    border: 5px solid rgb(31, 0, 31);/*borda da imagem*/
     box-shadow: 0 0 10px 8px rgb(54, 0, 104), inset /* sombra da borda*/
     0 0 10px 2px rgb(54, 0, 104);
-    border-radius: 18px;
+    border-radius: 18px;/*arredondamento das bordas*/
 }
-figcaption{
-    text-align: center;
-    font-size: small;
+figcaption{ /*local do link*/
+    text-align: center;/*alinhar texto*/
+    font-size: small;/*tamanho da fonte*/
 }
 /* modo */
-:root{
+:root{ /*variaveis padrao*/
     --background: aliceblue; /* variável da cor de fundo */
     --color: black ; /* variável da cor da letra */
     --borda: aliceblue; /* variável da cor da borda*/
@@ -166,44 +166,44 @@ figcaption{
     display: var(--semsol); /* retirar imagem*/
 }
 /* footer */
-footer{
-    background-color: var(--background);
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-    color: var(--color);
+footer{ /*rodapé*/
+    background-color: var(--background); /*cor do fundo*/
+    display:flex; /*posicionamento*/
+    justify-content:space-around; /*alinhar os elementos*/
+    margin-top: 1rem; /*margem do topo*/
+    color:var(--color); /*cor da letra*/
 }
-footer img{
-    width: 15rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 5px;
-    border-radius: 2rem;
-    box-shadow:
+footer img{ /*imagem do rodapé*/
+    width: 15rem; /*largura da imagem*/
+    margin-top: 3rem; /*margem do topo*/
+    margin-bottom: 3rem;  /*margem de baixo*/
+    padding: 5px; /*espaço para aumentar fundo da imagem*/
+    border-radius: 2rem;/*arredondar a borda*/
+    box-shadow: /*sombra para dentro da borda*/
     inset 60px 0 120px rgba(255, 106, 106, 0.493), /* sombra da borda para dentro da borda*/
     inset -60px 0 120px rgba(247, 180, 57, 0.603);     
 }
 
-#rodape{
-    padding: 2rem;
+#rodape{ /*espaço entre a borda do rodapé e os elementos dentro*/
+    padding: 2rem;/*espaço para nao ficar colado*/
 }
-footer p{
-    padding: 0;
-    margin: 0;
-    font-size: larger;
+footer p{ /*texto no rodapé*/
+    padding: 0;/*retirar o espaço entre os elementos*/
+    margin: 0;/*retirar margem*/
+    font-size: larger;/*tamanho da fonte*/
 }
-#footer2 h2{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(90deg, rgba(231,0,0,1) , rgba(231,135,0,1) , rgba(231,0,0,1) );
-    color: white;
+#footer2 h2{ /*linha do rodapé*/
+    text-align: center;/*alinhar texto ao centro*/
+    padding: 0;/*retirar os espaços*/
+    margin: 0;/*retirar a margem*/
+    background: linear-gradient(90deg, rgba(231,0,0,1) , rgba(231,135,0,1) , rgba(231,0,0,1) );/*fundo com gradiende*/
+    color: white;/* cor da letra*/
     text-shadow: /* mudar a cor da borda da letra*/
     -2px -2px 0px black, 
     -2px 2px 0px black,      
      2px -2px 0px black,    
      2px 0px 0px black;
-     font-family: tires; /* */
+     font-family: tires; /*estilo da fonte */
 }
 /* index */
 .indexbotao{ /*botão no index para cada página*/
@@ -217,8 +217,8 @@ footer p{
     box-shadow: 0 0 10px 8px  red, inset /* sombra da borda*/
     0 0 10px 2px red;
 }
-.index a{
-    text-decoration: none;
+.index a{/*link para as paginas dentro do botao*/
+    text-decoration: none;/*retirar sublinhado*/
 }
 /* mourvan */
 #mourvan{
@@ -238,11 +238,11 @@ footer p{
     }
 }
 /* matheus */
-.meza:hover{
+.meza:hover{/*qunado passar cursor sobre a imagem, mudar sua bord*/
     border: 5px solid gold; /* borda */
     border-radius: 5rem; /* arrendondar borda */
 }
-#mezah1{ 
+#mezah1{ /*titulo da minha pagina*/
     color: red; /* cor do texto */
     text-decoration: underline; /* sublinado do texto */
     text-shadow: /* mudar a cor da borda da letra*/
