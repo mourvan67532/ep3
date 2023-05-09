@@ -55,19 +55,15 @@ header li{ /* lista no header */
     text-decoration: none; /* retirar a decoração do texto*/
     font-size: x-large; /* tamanho da fonte*/
     font-family: texto; /* fonte usada*/
-    transition: 0.2s;
-    color: blue;
+    transition: 0.7s; /*tempo para animar*/
+    color: blue; /*cor da letra*/
 }
 .headera:hover{ /* animação do link no header ao passar o cursor*/
     color: #ac3840; /* cor da letra*/
-    text-shadow: /* mudar a cor da borda da letra*/
-    -1px -1px 0px black, 
-    -1px 1px 0px black,      
-     1px -1px 0px black,    
-     1px 0px 0px black;
     padding: 4px; /* espaço entre a borda e o texto*/
+    padding-bottom: 0; /* retirar espaço entre a borda de baixo*/
     font-size: x-large; /* tamanho da fonte*/
-    text-decoration: underline; /* deixar o título sublinado*/
+    border-bottom: 5px solid red; /* borda de baixo*/
 }
 #imgheader{ /* logo no header*/
     width: 10rem; /* tamanho da logo*/
@@ -219,6 +215,33 @@ footer p{ /*texto no rodapé*/
 }
 .index a{/*link para as paginas dentro do botao*/
     text-decoration: none;/*retirar sublinhado*/
+}
+.index1{
+    border: 3px solid var(--borda); /* borda */ 
+    border-radius: 5rem; /* arendondar borda*/
+    margin: 23%; /* margem */
+    padding-left: 2rem; /* espaço entre os textos e a borda esquerda*/
+    padding-right: 2rem; /* espaço entre os textos e a borda direita */
+    margin-top: 2rem; /* margem  do topo*/
+    margin-bottom: 0; /* retirar margem de baixo*/
+    text-align: center; /* alinar ao centro*/
+    background-color: var(--background); /* cor de fundo*/
+    color: var(--color); /* cor da letras*/
+    box-shadow: var(--borda-do-fundo)/*sombra em volta do fundo*/
+}
+.index1 img{
+    width: 35rem;/*tamanho da imagem*/
+    margin: auto;/*alinhar o centro da pagina*/
+    display: block;/*posicionar imagem*/
+    border: 5px solid rgb(31, 0, 31);/*borda da imagem*/
+    box-shadow: 0 0 10px 8px rgb(54, 0, 104), inset /* sombra da borda*/
+    0 0 10px 2px rgb(54, 0, 104);
+    border-radius: 18px;/*arredondamento das bordas*/
+}
+.index1 p{
+    font-family: texto;/*estilo da fonte*/
+    text-indent: 25px;/*espaço para começar paragrafo*/
+    font-size: large;/*tamanho da fonte*/
 }
 /* mourvan */
 #mourvan{
