@@ -275,3 +275,26 @@ footer p{ /*texto no rodapé*/
      1px 0px 0px black;
 }
 /* vinicius */
+#vinicius{
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.818) 0%, rgba(0, 255, 0, 0.821) 30%, rgba(17, 0, 255, 0.748) 63%, rgba(238, 255, 0, 0.79) 100%); /* fundo rgb*/
+    padding: 0.5rem; /* define o espaço entre o titulo e a borda */
+    animation: vinicius 1s infinite; /* coloca a animação do fundo*/
+}
+
+@keyframes vinicius {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: red;
+    }
+  }
